@@ -8,6 +8,6 @@ class SecretsController < ApplicationController
   private
 
   def require_login
-    return head(:200) unless session.include? :user_id
+    return head(:no route matches) unless session.include? :user_id
   end
 end
