@@ -4,9 +4,6 @@ class SessionsController < ApplicationController
     render :new
   end
 
-  def current_user
-  end
-
   def create
       if params[:name].nil? || params[:name].blank?
         redirect_to '/login'
