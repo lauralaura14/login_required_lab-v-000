@@ -2,7 +2,7 @@ class SecretsController < ApplicationController
   before_action :require_login
 
   def show
-
+    @page = Page.find(params[:id])
   end
 
   private
